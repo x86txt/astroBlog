@@ -1,5 +1,14 @@
-// @ts-check
-import { defineConfig } from 'astro/config';
+// astro.config.mjs
+import { defineConfig, envField } from "astro/config";
 
-// https://astro.build/config
-export default defineConfig({});
+export default defineConfig({
+  env: {
+    schema: {
+      PUBLIC_SOCIAL_GITHUB: envField.string({ context: "client", access: "public" }),
+      PUBLIC_SOCIAL_X: envField.string({ context: "client", access: "public" }),
+      PUBLIC_SOCIAL_LINKEDIN: envField.string({ context: "client", access: "public" }),
+      PUBLIC_SOCIAL_EMAIL: envField.string({ context: "client", access: "public" }),
+      PUBLIC_GOOGLE_SITE_VERIFICATION: envField.string({ context: "client", access: "public" }),
+    },
+  },
+});
