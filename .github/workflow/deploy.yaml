@@ -3,6 +3,12 @@ on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      PUBLIC_SOCIAL_GITHUB: ${{ secrets.PUBLIC_SOCIAL_GITHUB }}
+      PUBLIC_SOCIAL_X: ${{ secrets.PUBLIC_SOCIAL_X }}
+      PUBLIC_SOCIAL_LINKEDIN: ${{ secrets.PUBLIC_SOCIAL_LINKEDIN }}
+      PUBLIC_SOCIAL_EMAIL: ${{ secrets.PUBLIC_SOCIAL_EMAIL }}
+      PUBLIC_GOOGLE_SITE_VERIFICATION: ${{ secrets.PUBLIC_GOOGLE_SITE_VERIFICATION }}
     steps:
       - uses: actions/checkout@v4
       - uses: oven-sh/setup-bun@v2
