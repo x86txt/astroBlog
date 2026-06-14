@@ -1,0 +1,47 @@
+vite-load JS: configModule keys [ 'default' ]
+vite-load JS: configModule.default.fonts present? false
+resolveConfig DEBUG: userConfig.fonts? false mergedConfig.fonts? false astroConfig.fonts? false
+createBaseSettings: config.fonts exists? false length: undefined
+14:21:53 [content] Syncing content
+14:21:53 [WARN] [glob-loader] No entry type found for hidden-danger-of-open-source.mdx
+14:21:53 [WARN] [glob-loader] No entry type found for urban-city-photography.mdx
+14:21:53 [content] Synced content
+14:21:53 [types] Generated 237ms
+14:21:53 [build] output: "static"
+14:21:53 [build] mode: "static"
+14:21:53 [build] directory: /Users/mat/Documents/code/astroBlog/dist/
+14:21:53 [build] Collecting build info...
+14:21:53 [build] ✓ Completed in 250ms.
+14:21:53 [build] Building static entrypoints...
+[DEBUG FONTS] settings.config.fonts: undefined type: undefined isArray: false
+[DEBUG FONTS] env: prerender fontFamilyAssets.length: 0 resolvedFamilies.length: 0
+14:21:54 [vite] ✓ built in 963ms
+[DEBUG FONTS] settings.config.fonts: undefined type: undefined isArray: false
+[DEBUG FONTS] env: client fontFamilyAssets.length: 0 resolvedFamilies.length: 0
+14:21:54 [vite] ✓ built in 137ms
+14:21:54 [build] Rearranging server assets...
+
+ generating static routes 
+14:21:54   ├─ /404.html14:21:54 [ERROR] FontFamilyNotFound: No data was found for the `"--font-wotfard"` family passed to the `<Font>` component.
+    at file:///Users/mat/Documents/code/astroBlog/dist/.prerender/chunks/Footer_XTtJ8QLe.mjs:176:11
+    at AstroComponentInstance.Font [as factory] (file:///Users/mat/Documents/code/astroBlog/dist/.prerender/chunks/runtime_BCCSLmpn.mjs:18:12)
+    at AstroComponentInstance.init (file:///Users/mat/Documents/code/astroBlog/dist/.prerender/chunks/prerender_BkI1rSWC.mjs:3336:29)
+    at AstroComponentInstance.render (file:///Users/mat/Documents/code/astroBlog/dist/.prerender/chunks/prerender_BkI1rSWC.mjs:3346:30)
+    at Object.render (file:///Users/mat/Documents/code/astroBlog/dist/.prerender/chunks/prerender_BkI1rSWC.mjs:3974:23)
+    at renderChild (file:///Users/mat/Documents/code/astroBlog/dist/.prerender/chunks/prerender_BkI1rSWC.mjs:3236:18)
+    at RenderTemplateResult.render (file:///Users/mat/Documents/code/astroBlog/dist/.prerender/chunks/prerender_BkI1rSWC.mjs:2770:22)
+    at renderChild (file:///Users/mat/Documents/code/astroBlog/dist/.prerender/chunks/prerender_BkI1rSWC.mjs:3236:18)
+    at AstroComponentInstance.renderImpl (file:///Users/mat/Documents/code/astroBlog/dist/.prerender/chunks/prerender_BkI1rSWC.mjs:3356:14)
+    at AstroComponentInstance.render (file:///Users/mat/Documents/code/astroBlog/dist/.prerender/chunks/prerender_BkI1rSWC.mjs:3350:17)
+14:21:54 [ERROR] [build] Caught error rendering /404: FontFamilyNotFound: No data was found for the `"--font-wotfard"` family passed to the `<Font>` component.
+[FontFamilyNotFound] No data was found for the `"--font-wotfard"` family passed to the `<Font>` component.
+  Hint:
+    This is often caused by a typo. Check that the `<Font />` component is using a `cssVariable` specified in your config.
+  Error reference:
+    https://docs.astro.build/en/reference/errors/font-family-not-found/
+  Stack trace:
+    at file:///Users/mat/Documents/code/astroBlog/dist/.prerender/chunks/Footer_XTtJ8QLe.mjs:176:11
+    at AstroComponentInstance.init (file:///Users/mat/Documents/code/astroBlog/dist/.prerender/chunks/prerender_BkI1rSWC.mjs:3336:29)
+    at Object.render (file:///Users/mat/Documents/code/astroBlog/dist/.prerender/chunks/prerender_BkI1rSWC.mjs:3974:23)
+    at RenderTemplateResult.render (file:///Users/mat/Documents/code/astroBlog/dist/.prerender/chunks/prerender_BkI1rSWC.mjs:2770:22)
+    at AstroComponentInstance.renderImpl (file:///Users/mat/Documents/code/astroBlog/dist/.prerender/chunks/prerender_BkI1rSWC.mjs:3356:14)
