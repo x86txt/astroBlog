@@ -51,6 +51,11 @@ export default defineConfig({
       rollupOptions: {
         external: ["@resvg/resvg-js"],
       },
+      commonjsOptions: {
+        exclude: [
+          "node_modules/@resvg/**/*",
+        ],
+      },
     },
     ssr: {
       external: ["@resvg/resvg-js"],
