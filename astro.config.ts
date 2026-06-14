@@ -44,6 +44,9 @@ export default defineConfig({
   },
   vite: {
     plugins: [tailwindcss()],
+    ssr: {
+      external: ["@resvg/resvg-js"],
+    },
     optimizeDeps: {
       exclude: ["@resvg/resvg-js"],
     },
