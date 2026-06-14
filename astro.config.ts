@@ -47,22 +47,6 @@ export default defineConfig({
   },
   vite: {
     plugins: [tailwindcss()],
-    build: {
-      rollupOptions: {
-        external: ["@resvg/resvg-js"],
-      },
-      commonjsOptions: {
-        exclude: [
-          "node_modules/@resvg/**/*",
-        ],
-      },
-    },
-    ssr: {
-      external: ["@resvg/resvg-js"],
-    },
-    optimizeDeps: {
-      exclude: ["@resvg/resvg-js"],
-    },
   },
   image: {
     responsiveStyles: true,
