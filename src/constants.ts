@@ -9,7 +9,6 @@ import IconTelegram from "@/assets/icons/IconTelegram.svg";
 import IconPinterest from "@/assets/icons/IconPinterest.svg";
 import {
   PUBLIC_SOCIAL_GITHUB,
-  PUBLIC_SOCIAL_X,
   PUBLIC_SOCIAL_LINKEDIN,
   PUBLIC_SOCIAL_EMAIL,
 } from "astro:env/client";
@@ -33,12 +32,6 @@ export const SOCIALS: Social[] = (
       href: PUBLIC_SOCIAL_GITHUB ?? "",
       linkTitle: `${SITE.title} on GitHub`,
       icon: IconGitHub,
-    },
-    {
-      name: "X",
-      href: PUBLIC_SOCIAL_X ?? "",
-      linkTitle: `${SITE.title} on X`,
-      icon: IconBrandX,
     },
     {
       name: "LinkedIn",

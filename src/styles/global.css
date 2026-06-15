@@ -1,18 +1,6 @@
 @import "tailwindcss";
 @import "./typography.css";
 
-@font-face {
-  font-family: "Geist Mono";
-  src: url("/fonts/GeistMono[wght].woff2") format("woff2");
-  font-weight: 100 900;
-  font-style: normal;
-  font-display: swap;
-}
-
-.blog-title {
-  font-family: "Geist Mono", ui-monospace, SFMono-Regular, Consolas, monospace;
-}
-
 @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 
 :root,
@@ -33,9 +21,8 @@ html[data-theme="dark"] {
 }
 
 @theme inline {
-  --font-app: var(--font-wotfard);
-  --font-sriracha: var(--font-sriracha);
-  --font-firacode: var(--font-firacode);
+  --font-app: var(--font-geist-sans);
+  --font-firacode: var(--font-geist-mono);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-accent: var(--accent);
@@ -47,12 +34,13 @@ html[data-theme="dark"] {
 .prose em,
 em,
 i {
-  font-family: var(--font-sriracha);
+  font-family: var(--font-app);
   font-style: italic;
 }
 
 .spicy {
-  font-family: var(--font-sriracha);
+  font-family: var(--font-app);
+  font-style: italic;
 }
 
 @layer base {

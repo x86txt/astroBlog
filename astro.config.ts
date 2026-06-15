@@ -68,11 +68,6 @@ export default defineConfig({
         context: "client",
         optional: true,
       }),
-      PUBLIC_SOCIAL_X: envField.string({
-        access: "public",
-        context: "client",
-        optional: true,
-      }),
       PUBLIC_SOCIAL_LINKEDIN: envField.string({
         access: "public",
         context: "client",
@@ -94,53 +89,36 @@ export default defineConfig({
 
   fonts: [
     {
-      name: "Wotfard",
-      cssVariable: "--font-wotfard",
+      name: "Geist",
+      cssVariable: "--font-geist-sans",
       fallbacks: ["sans-serif"],
       provider: fontProviders.local(),
       options: {
         variants: [
           {
-            src: ["./src/assets/fonts/wotfard.woff2"],
+            src: ["./src/assets/fonts/geist-sans.woff2"],
+            weight: "100 900",
+            style: "normal",
           },
-        ],
-      },
-    },
-    {
-      name: "Sriracha",
-      cssVariable: "--font-sriracha",
-      fallbacks: ["cursive"],
-      provider: fontProviders.local(),
-      options: {
-        variants: [
           {
-            src: ["./src/assets/fonts/sriracha.woff2"],
+            src: ["./src/assets/fonts/geist-sans-italic.woff2"],
+            weight: "100 900",
+            style: "italic",
           },
         ],
       },
     },
     {
-      name: "Fira Code",
-      cssVariable: "--font-firacode",
+      name: "Geist Mono",
+      cssVariable: "--font-geist-mono",
       fallbacks: ["monospace"],
       provider: fontProviders.local(),
       options: {
         variants: [
           {
-            src: ["./src/assets/fonts/firacode.woff2"],
-          },
-        ],
-      },
-    },
-    {
-      name: "Cascadia Code",
-      cssVariable: "--font-cascadia-code",
-      fallbacks: ["monospace"],
-      provider: fontProviders.local(),
-      options: {
-        variants: [
-          {
-            src: ["./src/assets/fonts/cascadia-code.woff2"],
+            src: ["./src/assets/fonts/geist-mono.woff2"],
+            weight: "100 900",
+            style: "normal",
           },
         ],
       },
