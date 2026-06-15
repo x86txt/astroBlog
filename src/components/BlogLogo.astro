@@ -1,0 +1,46 @@
+---
+import type { HTMLAttributes } from "astro/types";
+
+type Props = HTMLAttributes<"span"> & {
+  size?: "header" | "footer";
+};
+
+const { size = "header", class: className, ...attrs } = Astro.props;
+---
+
+<span
+  class:list={[
+    "blog-title",
+    size === "header" && "blog-title--header",
+    size === "footer" && "blog-title--footer",
+    className,
+  ]}
+  {...attrs}
+>
+  technical <span class="blog-title-accent">//</span> draft
+</span>
+
+<style>
+  .blog-title--header {
+    font-size: 1.125rem;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+  }
+
+  @media (min-width: 640px) {
+    .blog-title--header {
+      font-size: 1.25rem;
+    }
+  }
+
+  .blog-title--footer {
+    font-size: 0.9375rem;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    opacity: 0.85;
+  }
+
+  .blog-title-accent {
+    color: var(--accent);
+  }
+</style>

@@ -1,10 +1,10 @@
 export const SITE = {
   website: "https://blog.mattevans.cloud/",
-  author: "Andrés Ujpán",
+  author: "Matt Evans",
   profile: process.env.PUBLIC_SOCIAL_GITHUB ?? "", // set in .env
   desc: "A space where curiosity becomes code. Exploring web development, software architecture and everything that makes the tech world spin.",
-  title: "Astro Devosfera",
-  ogImage: "devosfera-og.webp", // located in the public folder
+  title: "The Technical Draft",
+  ogImage: "", // uses dynamic /og.png when empty
   lightAndDarkMode: true,
   postPerIndex: 6,
   postPerPage: 12,

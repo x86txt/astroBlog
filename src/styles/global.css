@@ -1,6 +1,18 @@
 @import "tailwindcss";
 @import "./typography.css";
 
+@font-face {
+  font-family: "Geist Mono";
+  src: url("/fonts/GeistMono[wght].woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+.blog-title {
+  font-family: "Geist Mono", ui-monospace, SFMono-Regular, Consolas, monospace;
+}
+
 @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 
 :root,
