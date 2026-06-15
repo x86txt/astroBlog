@@ -1,5 +1,5 @@
 export const SITE = {
-  website: "https://devosfera.vercel.app/",
+  website: "https://blog.mattevans.cloud/",
   author: "Andrés Ujpán",
   profile: process.env.PUBLIC_SOCIAL_GITHUB ?? "", // set in .env
   desc: "A space where curiosity becomes code. Exploring web development, software architecture and everything that makes the tech world spin.",

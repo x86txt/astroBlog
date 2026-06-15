@@ -182,7 +182,7 @@ const showGrain = SITE.backdropEffects.grain;
         <script
           type="application/ld+json"
           is:inline
-          set:html={JSON.stringify(finalStructuredData)}
+          set:html={JSON.stringify(finalStructuredData).replace(/</g, "\\u003c")}
         />
       )
     }
